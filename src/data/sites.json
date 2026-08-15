@@ -1,6 +1,7 @@
 {
   "schemaVersion": 1,
   "updatedAt": "2026-08-15",
+  "note": "访问状态为常见情况概览，会随地区、运营商、时间与服务商政策变化。",
   "statusDefinitions": {
     "blocked": "在中国大陆通常无法直接访问",
     "partial": "通常可访问，但速度或功能可能不稳定",
@@ -36,6 +37,11 @@
       "code": "06",
       "title": "社交与协作",
       "description": "视频、社交网络、即时通讯与团队协作。"
+    },
+    "agent": {
+      "code": "07",
+      "title": "AI 编程与 Agent",
+      "description": "AI 编程助手、代码智能体与自动化开发工具。"
     }
   },
   "sites": [
@@ -306,6 +312,81 @@
           "type": "mirror",
           "name": "HF-Mirror",
           "url": "https://hf-mirror.com/"
+        }
+      ]
+    },
+    {
+      "id": "grok",
+      "category": "ai",
+      "name": "Grok",
+      "initials": "GK",
+      "intro": "xAI 推出的对话式 AI 助手，与 X 平台深度结合，强调实时信息。",
+      "status": "region",
+      "accessSummary": "服务可用地区与账号体系受官方政策限制，中国大陆通常无法直接使用。",
+      "official": {
+        "name": "原网站",
+        "url": "https://grok.com/"
+      },
+      "alternatives": [
+        {
+          "type": "alternative",
+          "name": "DeepSeek",
+          "url": "https://chat.deepseek.com/"
+        },
+        {
+          "type": "alternative",
+          "name": "豆包",
+          "url": "https://www.doubao.com/"
+        }
+      ]
+    },
+    {
+      "id": "midjourney",
+      "category": "ai",
+      "name": "Midjourney",
+      "initials": "MJ",
+      "intro": "以高质量图像生成著称的 AI 绘画服务。",
+      "status": "region",
+      "accessSummary": "注册与使用依赖境外账号和支付方式，中国大陆通常无法直接使用。",
+      "official": {
+        "name": "原网站",
+        "url": "https://www.midjourney.com/"
+      },
+      "alternatives": [
+        {
+          "type": "alternative",
+          "name": "即梦 AI",
+          "url": "https://jimeng.jianying.com/"
+        },
+        {
+          "type": "alternative",
+          "name": "文心一格",
+          "url": "https://yige.baidu.com/"
+        }
+      ]
+    },
+    {
+      "id": "poe",
+      "category": "ai",
+      "name": "Poe",
+      "initials": "PO",
+      "intro": "Quora 推出的多模型聚合对话平台，可切换多种大模型。",
+      "status": "region",
+      "accessSummary": "整合的多为境外模型，账号与访问通常受地区限制。",
+      "official": {
+        "name": "原网站",
+        "url": "https://poe.com/"
+      },
+      "alternatives": [
+        {
+          "type": "alternative",
+          "name": "Kimi",
+          "url": "https://www.kimi.com/"
+        },
+        {
+          "type": "alternative",
+          "name": "腾讯元宝",
+          "url": "https://yuanbao.tencent.com/"
         }
       ]
     },
@@ -811,6 +892,206 @@
           "type": "alternative",
           "name": "钉钉",
           "url": "https://www.dingtalk.com/"
+        }
+      ]
+    },
+    {
+      "id": "cursor",
+      "category": "agent",
+      "name": "Cursor",
+      "initials": "CU",
+      "intro": "内置 AI 对话、补全与代码智能体的 AI 代码编辑器。",
+      "status": "partial",
+      "accessSummary": "客户端可下载安装，但登录、模型推理与更新依赖境外服务，可能不稳定。",
+      "official": {
+        "name": "原网站",
+        "url": "https://cursor.com/"
+      },
+      "alternatives": [
+        {
+          "type": "alternative",
+          "name": "Trae",
+          "url": "https://www.trae.cn/"
+        },
+        {
+          "type": "alternative",
+          "name": "通义灵码",
+          "url": "https://lingma.aliyun.com/"
+        }
+      ]
+    },
+    {
+      "id": "github-copilot",
+      "category": "agent",
+      "name": "GitHub Copilot",
+      "initials": "CP",
+      "intro": "GitHub 与 OpenAI 合作的 AI 编程助手，提供补全、对话与智能体能力。",
+      "status": "partial",
+      "accessSummary": "依赖 GitHub 账号与境外推理服务，登录和补全请求可能超时。",
+      "official": {
+        "name": "原网站",
+        "url": "https://github.com/features/copilot"
+      },
+      "alternatives": [
+        {
+          "type": "alternative",
+          "name": "百度 Comate",
+          "url": "https://comate.baidu.com/"
+        },
+        {
+          "type": "alternative",
+          "name": "CodeGeeX",
+          "url": "https://codegeex.cn/"
+        }
+      ]
+    },
+    {
+      "id": "claude-code",
+      "category": "agent",
+      "name": "Claude Code",
+      "initials": "CC",
+      "intro": "Anthropic 推出的命令行 AI 编程智能体，可读写代码并执行任务。",
+      "status": "region",
+      "accessSummary": "需要 Anthropic 账号与可用地区，中国大陆通常无法直接使用。",
+      "official": {
+        "name": "原网站",
+        "url": "https://claude.com/product/claude-code"
+      },
+      "alternatives": [
+        {
+          "type": "alternative",
+          "name": "通义灵码",
+          "url": "https://lingma.aliyun.com/"
+        },
+        {
+          "type": "alternative",
+          "name": "腾讯 CodeBuddy",
+          "url": "https://copilot.tencent.com/"
+        }
+      ]
+    },
+    {
+      "id": "windsurf",
+      "category": "agent",
+      "name": "Windsurf",
+      "initials": "WS",
+      "intro": "面向智能体编程的 AI 编辑器，主打自动化的多步骤开发流程。",
+      "status": "partial",
+      "accessSummary": "客户端可安装，但账号登录与模型服务依赖境外基础设施。",
+      "official": {
+        "name": "原网站",
+        "url": "https://windsurf.com/"
+      },
+      "alternatives": [
+        {
+          "type": "alternative",
+          "name": "Trae",
+          "url": "https://www.trae.cn/"
+        },
+        {
+          "type": "alternative",
+          "name": "豆包 MarsCode",
+          "url": "https://www.marscode.cn/"
+        }
+      ]
+    },
+    {
+      "id": "cline",
+      "category": "agent",
+      "name": "Cline",
+      "initials": "CN",
+      "intro": "开源的 VS Code AI 编程智能体插件，可自带模型 API 使用。",
+      "status": "partial",
+      "accessSummary": "插件本体开源，但其效果取决于所接入模型 API 的可达性。",
+      "official": {
+        "name": "原网站",
+        "url": "https://cline.bot/"
+      },
+      "alternatives": [
+        {
+          "type": "alternative",
+          "name": "通义灵码",
+          "url": "https://lingma.aliyun.com/"
+        },
+        {
+          "type": "alternative",
+          "name": "CodeGeeX",
+          "url": "https://codegeex.cn/"
+        }
+      ]
+    },
+    {
+      "id": "devin",
+      "category": "agent",
+      "name": "Devin",
+      "initials": "DV",
+      "intro": "Cognition 推出的自主软件工程智能体，可独立完成开发任务。",
+      "status": "region",
+      "accessSummary": "为境外托管服务，账号与访问受地区限制。",
+      "official": {
+        "name": "原网站",
+        "url": "https://devin.ai/"
+      },
+      "alternatives": [
+        {
+          "type": "alternative",
+          "name": "腾讯 CodeBuddy",
+          "url": "https://copilot.tencent.com/"
+        },
+        {
+          "type": "alternative",
+          "name": "通义灵码",
+          "url": "https://lingma.aliyun.com/"
+        }
+      ]
+    },
+    {
+      "id": "v0",
+      "category": "agent",
+      "name": "v0",
+      "initials": "V0",
+      "intro": "Vercel 推出的 AI 应用与界面生成工具，可从描述生成前端代码。",
+      "status": "partial",
+      "accessSummary": "站点与生成服务依赖 Vercel 境外基础设施，可能加载缓慢。",
+      "official": {
+        "name": "原网站",
+        "url": "https://v0.app/"
+      },
+      "alternatives": [
+        {
+          "type": "alternative",
+          "name": "文心快码",
+          "url": "https://comate.baidu.com/"
+        },
+        {
+          "type": "alternative",
+          "name": "即梦 AI",
+          "url": "https://jimeng.jianying.com/"
+        }
+      ]
+    },
+    {
+      "id": "replit",
+      "category": "agent",
+      "name": "Replit",
+      "initials": "RP",
+      "intro": "在线编程与协作平台，内置 AI 智能体可生成并运行应用。",
+      "status": "partial",
+      "accessSummary": "在线 IDE 与运行环境依赖境外服务器，连接和构建可能不稳定。",
+      "official": {
+        "name": "原网站",
+        "url": "https://replit.com/"
+      },
+      "alternatives": [
+        {
+          "type": "alternative",
+          "name": "腾讯云 CloudStudio",
+          "url": "https://cloudstudio.net/"
+        },
+        {
+          "type": "alternative",
+          "name": "阿里云 CloudIDE",
+          "url": "https://www.aliyun.com/product/cloudide"
         }
       ]
     }
