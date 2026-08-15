@@ -1156,31 +1156,6 @@
       ]
     },
     {
-      "id": "sora",
-      "category": "media",
-      "name": "Sora",
-      "initials": "SO",
-      "intro": "OpenAI 推出的 AI 视频生成产品，强调较长镜头中的物理真实感与叙事连贯性。",
-      "status": "region",
-      "accessSummary": "依赖 OpenAI 账号与可用地区，中国大陆通常无法直接使用。",
-      "official": {
-        "name": "原网站",
-        "url": "https://sora.com/"
-      },
-      "alternatives": [
-        {
-          "type": "alternative",
-          "name": "即梦 AI / Seedance",
-          "url": "https://jimeng.jianying.com/"
-        },
-        {
-          "type": "alternative",
-          "name": "可灵 AI",
-          "url": "https://klingai.com/"
-        }
-      ]
-    },
-    {
       "id": "luma-dream-machine",
       "category": "media",
       "name": "Luma Dream Machine",
