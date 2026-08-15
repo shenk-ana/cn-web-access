@@ -219,11 +219,11 @@ function renderDetail() {
             <h2>使用建议</h2>
           </div>
         </div>
-        <ol class="guidance-list">
+        <ul class="guidance-list">
           ${categoryGuidance[site.category]
-            .map((item, index) => `<li><span>0${index + 1}</span><p>${item}</p></li>`)
+            .map((item) => `<li><span aria-hidden="true"></span><p>${item}</p></li>`)
             .join("")}
-        </ol>
+        </ul>
       </article>
 
       <aside class="detail-aside">

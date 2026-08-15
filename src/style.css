@@ -1248,16 +1248,17 @@ h1 span {
 
 .guidance-list li {
   display: grid;
-  grid-template-columns: 44px 1fr;
-  gap: 18px;
-  padding: 20px 0;
+  grid-template-columns: 22px 1fr;
+  gap: 14px;
+  padding: 18px 0;
   border-bottom: 1px solid var(--line);
 }
 
 .guidance-list span {
-  color: var(--blue);
-  font-family: var(--mono);
-  font-size: 10px;
+  width: 8px;
+  height: 8px;
+  margin-top: 8px;
+  background: var(--blue);
 }
 
 .guidance-list p {
