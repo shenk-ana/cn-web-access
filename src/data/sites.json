@@ -42,6 +42,11 @@
       "code": "07",
       "title": "AI 编程与 Agent",
       "description": "AI 编程助手、代码智能体与自动化开发工具。"
+    },
+    "media": {
+      "code": "08",
+      "title": "图像与视频生成",
+      "description": "AI 绘画、文生图、文生视频与图生视频。"
     }
   },
   "sites": [
@@ -342,7 +347,7 @@
     },
     {
       "id": "midjourney",
-      "category": "ai",
+      "category": "media",
       "name": "Midjourney",
       "initials": "MJ",
       "intro": "以高质量图像生成著称的 AI 绘画服务。",
@@ -1152,6 +1157,386 @@
           "type": "alternative",
           "name": "Trae",
           "url": "https://www.trae.cn/"
+        }
+      ]
+    },
+    {
+      "id": "seedance",
+      "category": "media",
+      "name": "Seedance",
+      "initials": "SD",
+      "intro": "字节跳动推出的 AI 视频生成模型，支持文生视频、图生视频与多模态参考创作。",
+      "status": "partial",
+      "accessSummary": "国内可通过即梦 AI、豆包等产品使用；模型介绍页与开放平台能力可能随产品更新调整。",
+      "official": {
+        "name": "模型介绍",
+        "url": "https://seed.bytedance.com/"
+      },
+      "alternatives": [
+        {
+          "type": "alternative",
+          "name": "即梦 AI",
+          "url": "https://jimeng.jianying.com/"
+        },
+        {
+          "type": "alternative",
+          "name": "可灵 AI",
+          "url": "https://klingai.com/"
+        }
+      ]
+    },
+    {
+      "id": "kling-ai",
+      "category": "media",
+      "name": "可灵 AI",
+      "initials": "KL",
+      "intro": "快手推出的 AI 图像与视频生成平台，支持文生视频、图生视频和创意剪辑。",
+      "status": "partial",
+      "accessSummary": "国内通常可直接使用；具体额度、模型和登录方式以官方当前策略为准。",
+      "official": {
+        "name": "原网站",
+        "url": "https://klingai.com/"
+      },
+      "alternatives": [
+        {
+          "type": "alternative",
+          "name": "即梦 AI",
+          "url": "https://jimeng.jianying.com/"
+        },
+        {
+          "type": "alternative",
+          "name": "海螺 AI",
+          "url": "https://hailuoai.com/"
+        }
+      ]
+    },
+    {
+      "id": "hailuo-ai",
+      "category": "media",
+      "name": "海螺 AI",
+      "initials": "HL",
+      "intro": "MiniMax 推出的 AI 视频生成服务，擅长中文提示词理解与动态画面生成。",
+      "status": "partial",
+      "accessSummary": "国内通常可访问；免费额度与会员能力会随运营策略变化。",
+      "official": {
+        "name": "原网站",
+        "url": "https://hailuoai.com/"
+      },
+      "alternatives": [
+        {
+          "type": "alternative",
+          "name": "可灵 AI",
+          "url": "https://klingai.com/"
+        },
+        {
+          "type": "alternative",
+          "name": "Vidu",
+          "url": "https://www.vidu.cn/"
+        }
+      ]
+    },
+    {
+      "id": "vidu",
+      "category": "media",
+      "name": "Vidu",
+      "initials": "VD",
+      "intro": "生数科技推出的 AI 视频生成平台，支持文生视频、参考生视频和动漫风格内容。",
+      "status": "partial",
+      "accessSummary": "国内通常可直接使用，适合短视频和风格化创作。",
+      "official": {
+        "name": "原网站",
+        "url": "https://www.vidu.cn/"
+      },
+      "alternatives": [
+        {
+          "type": "alternative",
+          "name": "即梦 AI",
+          "url": "https://jimeng.jianying.com/"
+        },
+        {
+          "type": "alternative",
+          "name": "可灵 AI",
+          "url": "https://klingai.com/"
+        }
+      ]
+    },
+    {
+      "id": "jimeng-ai",
+      "category": "media",
+      "name": "即梦 AI",
+      "initials": "JM",
+      "intro": "剪映体系下的 AI 图像与视频创作平台，可使用 Seedance 等模型生成内容。",
+      "status": "partial",
+      "accessSummary": "国内通常可直接使用，是 Seedance 等字节视频模型的主要消费端入口之一。",
+      "official": {
+        "name": "原网站",
+        "url": "https://jimeng.jianying.com/"
+      },
+      "alternatives": [
+        {
+          "type": "alternative",
+          "name": "可灵 AI",
+          "url": "https://klingai.com/"
+        },
+        {
+          "type": "alternative",
+          "name": "通义万相",
+          "url": "https://tongyi.aliyun.com/wanxiang/"
+        }
+      ]
+    },
+    {
+      "id": "runway",
+      "category": "media",
+      "name": "Runway",
+      "initials": "RW",
+      "intro": "面向专业创作的 AI 视频生成与剪辑平台，提供文生视频和多种视频编辑工具。",
+      "status": "region",
+      "accessSummary": "服务、账号和支付通常面向境外用户，中国大陆直接使用可能受限。",
+      "official": {
+        "name": "原网站",
+        "url": "https://runwayml.com/"
+      },
+      "alternatives": [
+        {
+          "type": "alternative",
+          "name": "可灵 AI",
+          "url": "https://klingai.com/"
+        },
+        {
+          "type": "alternative",
+          "name": "即梦 AI",
+          "url": "https://jimeng.jianying.com/"
+        }
+      ]
+    },
+    {
+      "id": "sora",
+      "category": "media",
+      "name": "Sora",
+      "initials": "SO",
+      "intro": "OpenAI 推出的 AI 视频生成产品，强调较长镜头中的物理真实感与叙事连贯性。",
+      "status": "region",
+      "accessSummary": "依赖 OpenAI 账号与可用地区，中国大陆通常无法直接使用。",
+      "official": {
+        "name": "原网站",
+        "url": "https://sora.com/"
+      },
+      "alternatives": [
+        {
+          "type": "alternative",
+          "name": "即梦 AI / Seedance",
+          "url": "https://jimeng.jianying.com/"
+        },
+        {
+          "type": "alternative",
+          "name": "可灵 AI",
+          "url": "https://klingai.com/"
+        }
+      ]
+    },
+    {
+      "id": "luma-dream-machine",
+      "category": "media",
+      "name": "Luma Dream Machine",
+      "initials": "LM",
+      "intro": "Luma AI 推出的视频生成工具，支持文生视频、图生视频和镜头控制。",
+      "status": "region",
+      "accessSummary": "网站与账号体系面向全球用户，中国大陆访问和注册可能不稳定或受限。",
+      "official": {
+        "name": "原网站",
+        "url": "https://lumalabs.ai/dream-machine"
+      },
+      "alternatives": [
+        {
+          "type": "alternative",
+          "name": "海螺 AI",
+          "url": "https://hailuoai.com/"
+        },
+        {
+          "type": "alternative",
+          "name": "Vidu",
+          "url": "https://www.vidu.cn/"
+        }
+      ]
+    },
+    {
+      "id": "pika",
+      "category": "media",
+      "name": "Pika",
+      "initials": "PK",
+      "intro": "面向创意短视频的 AI 生成平台，强调特效、风格化和社交内容创作。",
+      "status": "region",
+      "accessSummary": "境外服务为主，中国大陆直接访问和订阅可能受限。",
+      "official": {
+        "name": "原网站",
+        "url": "https://pika.art/"
+      },
+      "alternatives": [
+        {
+          "type": "alternative",
+          "name": "可灵 AI",
+          "url": "https://klingai.com/"
+        },
+        {
+          "type": "alternative",
+          "name": "即梦 AI",
+          "url": "https://jimeng.jianying.com/"
+        }
+      ]
+    },
+    {
+      "id": "google-veo",
+      "category": "media",
+      "name": "Google Veo",
+      "initials": "VE",
+      "intro": "Google 推出的高质量 AI 视频生成模型，强调电影感画面与音画协同。",
+      "status": "region",
+      "accessSummary": "依赖 Google 账号与 Gemini / Vertex AI 等境外基础设施，中国大陆通常无法直接使用。",
+      "official": {
+        "name": "原网站",
+        "url": "https://deepmind.google/models/veo/"
+      },
+      "alternatives": [
+        {
+          "type": "alternative",
+          "name": "可灵 AI",
+          "url": "https://klingai.com/"
+        },
+        {
+          "type": "alternative",
+          "name": "即梦 AI",
+          "url": "https://jimeng.jianying.com/"
+        }
+      ]
+    },
+    {
+      "id": "stability-ai",
+      "category": "media",
+      "name": "Stability AI",
+      "initials": "SA",
+      "intro": "Stable Diffusion 与 Stable Video Diffusion 等开源生成模型的主要提供方。",
+      "status": "partial",
+      "accessSummary": "官网与部分云服务可能可访问，但模型权重下载常依赖 Hugging Face 等境外源。",
+      "official": {
+        "name": "原网站",
+        "url": "https://stability.ai/"
+      },
+      "alternatives": [
+        {
+          "type": "alternative",
+          "name": "通义万相",
+          "url": "https://tongyi.aliyun.com/wanxiang/"
+        },
+        {
+          "type": "alternative",
+          "name": "LiblibAI",
+          "url": "https://www.liblib.art/"
+        },
+        {
+          "type": "mirror",
+          "name": "HF-Mirror",
+          "url": "https://hf-mirror.com/"
+        }
+      ]
+    },
+    {
+      "id": "leonardo-ai",
+      "category": "media",
+      "name": "Leonardo.ai",
+      "initials": "LE",
+      "intro": "面向创作者的 AI 图像生成平台，支持多种风格模型和资源管理。",
+      "status": "region",
+      "accessSummary": "境外 SaaS 服务，中国大陆注册、登录和支付可能受限。",
+      "official": {
+        "name": "原网站",
+        "url": "https://leonardo.ai/"
+      },
+      "alternatives": [
+        {
+          "type": "alternative",
+          "name": "即梦 AI",
+          "url": "https://jimeng.jianying.com/"
+        },
+        {
+          "type": "alternative",
+          "name": "文心一格",
+          "url": "https://yige.baidu.com/"
+        }
+      ]
+    },
+    {
+      "id": "ideogram",
+      "category": "media",
+      "name": "Ideogram",
+      "initials": "IG",
+      "intro": "擅长在图像中生成清晰文字的 AI 绘画平台，适合海报和设计稿。",
+      "status": "region",
+      "accessSummary": "境外服务，中国大陆访问与账号能力可能受限。",
+      "official": {
+        "name": "原网站",
+        "url": "https://ideogram.ai/"
+      },
+      "alternatives": [
+        {
+          "type": "alternative",
+          "name": "通义万相",
+          "url": "https://tongyi.aliyun.com/wanxiang/"
+        },
+        {
+          "type": "alternative",
+          "name": "即梦 AI",
+          "url": "https://jimeng.jianying.com/"
+        }
+      ]
+    },
+    {
+      "id": "adobe-firefly",
+      "category": "media",
+      "name": "Adobe Firefly",
+      "initials": "AF",
+      "intro": "Adobe 推出的生成式 AI 创作套件，覆盖图像、视频和设计工作流。",
+      "status": "partial",
+      "accessSummary": "部分 Adobe 中国区能力可用，但具体模型和功能与全球区并不完全一致。",
+      "official": {
+        "name": "原网站",
+        "url": "https://www.adobe.com/products/firefly.html"
+      },
+      "alternatives": [
+        {
+          "type": "alternative",
+          "name": "通义万相",
+          "url": "https://tongyi.aliyun.com/wanxiang/"
+        },
+        {
+          "type": "alternative",
+          "name": "即梦 AI",
+          "url": "https://jimeng.jianying.com/"
+        }
+      ]
+    },
+    {
+      "id": "tongyi-wanxiang",
+      "category": "media",
+      "name": "通义万相",
+      "initials": "WX",
+      "intro": "阿里云通义系列的图像与视频生成服务，面向国内创作者和开发者。",
+      "status": "partial",
+      "accessSummary": "国内通常可直接使用，适合作为境外绘画和视频工具的替代入口。",
+      "official": {
+        "name": "原网站",
+        "url": "https://tongyi.aliyun.com/wanxiang/"
+      },
+      "alternatives": [
+        {
+          "type": "alternative",
+          "name": "即梦 AI",
+          "url": "https://jimeng.jianying.com/"
+        },
+        {
+          "type": "alternative",
+          "name": "文心一格",
+          "url": "https://yige.baidu.com/"
         }
       ]
     }
