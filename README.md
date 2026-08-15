@@ -11,6 +11,10 @@
 
 > 本项目只提供一般性信息，不构成法律意见，也不提供规避网络监管的操作指导。
 
+## 在线访问
+
+https://shenk-ana.github.io/cn-web-access/
+
 ## 欢迎提供最新数据
 
 网站可用性会随地区、运营商、时间和服务商政策变化，我们非常欢迎大家帮助更新数据。
@@ -88,18 +92,6 @@ npm run build
 ```
 
 构建产物位于 `dist/`，包括首页和网站详情页。
-
-## GitHub Pages
-
-项目已经包含 `.github/workflows/deploy-pages.yml`。仓库启用 GitHub Pages 并将发布来源设为 **GitHub Actions** 后，推送到 `main` 或 `master` 分支会自动构建和发布。
-
-工作流会根据仓库名称设置 Vite 的 `BASE_PATH`，因此可以发布为：
-
-```text
-https://<GitHub用户名>.github.io/<仓库名>/
-```
-
-如果仓库暂时为私有，请先确认当前 GitHub 套餐是否支持该仓库的 Pages 发布与所需访问范围。计划开放社区贡献时，可将仓库改为公开，并在仓库中启用 Issues 和 Pull Requests。
 
 ## 内容与安全说明
 
