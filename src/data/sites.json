@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-15",
+  "updatedAt": "2026-08-16",
   "note": "访问状态为常见情况概览，会随地区、运营商、时间与服务商政策变化。",
   "statusDefinitions": {
     "blocked": "在中国大陆通常无法直接访问",
@@ -260,8 +260,8 @@
       "alternatives": [
         {
           "type": "alternative",
-          "name": "文心一言",
-          "url": "https://yiyan.baidu.com/"
+          "name": "百度文心",
+          "url": "https://wenxin.baidu.com/"
         },
         {
           "type": "alternative",
