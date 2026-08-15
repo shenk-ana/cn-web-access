@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="了解中国大陆访问海外主流网站时可能遇到的限制、影响与合规解决方案。"
+    />
+    <title>边界之外｜海外网站访问指南</title>
+    <link rel="stylesheet" href="./src/style.css" />
+  </head>
+  <body>
+    <div class="noise" aria-hidden="true"></div>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="返回首页">
+        <span class="brand-mark">界</span>
+        <span>边界之外</span>
+      </a>
+      <nav aria-label="主导航">
+        <a href="#status">访问状态</a>
+        <a href="#reasons">限制原因</a>
+        <a href="#solutions">解决办法</a>
+      </nav>
+      <span class="update-time">信息参考 · 2026.08</span>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">CROSS-BORDER WEB ACCESS / 中国大陆</p>
+          <h1>看清网络的<br /><span>可达边界</span></h1>
+          <p class="hero-intro">
+            一份面向学习、工作与出行场景的海外网站访问说明。了解哪些服务可能受限、为什么受限，以及有哪些合规可行的替代路径。
+          </p>
+          <a class="primary-link" href="#status">
+            查看网站状态
+            <span aria-hidden="true">↓</span>
+          </a>
+        </div>
+
+        <div class="route-map" aria-label="网络访问路径示意图">
+          <div class="route-glow"></div>
+          <div class="node node-cn">
+            <span class="node-dot"></span>
+            <strong>中国大陆</strong>
+            <small>本地网络</small>
+          </div>
+          <div class="route-line route-a"><i></i></div>
+          <div class="checkpoint">
+            <span>跨境网关</span>
+            <b>访问策略</b>
+          </div>
+          <div class="route-line route-b blocked"><i></i></div>
+          <div class="node node-world">
+            <span class="node-dot"></span>
+            <strong>全球互联网</strong>
+            <small>海外服务</small>
+          </div>
+          <div class="status-float">
+            <span class="pulse"></span>
+            状态因地区、运营商与时间变化
+          </div>
+        </div>
+      </section>
+
+      <section class="status-section directory-section" id="status">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">ACCESS DIRECTORY</p>
+            <h2>按用途查找网站</h2>
+          </div>
+          <p>先选择大分类，再查看原站状态、境内替代服务和可用镜像。</p>
+        </div>
+
+        <div class="directory-toolbar">
+          <div class="filters" role="group" aria-label="按访问状态筛选">
+            <button class="filter active" data-filter="all">全部</button>
+            <button class="filter" data-filter="blocked">通常受限</button>
+            <button class="filter" data-filter="partial">速度不稳</button>
+            <button class="filter" data-filter="region">区域限制</button>
+          </div>
+          <label class="search">
+            <span class="sr-only">搜索网站</span>
+            <input id="site-search" type="search" placeholder="搜索网站或替代服务…" />
+            <kbd>⌕</kbd>
+          </label>
+        </div>
+
+        <div class="accordion-list" id="site-grid" aria-live="polite"></div>
+        <p class="empty-state" id="empty-state" hidden>没有找到符合条件的服务。</p>
+        <div class="directory-footnote">
+          <span class="pulse"></span>
+          <p><strong>状态说明：</strong>“速度不稳”表示服务通常并非政策性屏蔽，但跨境链路、CDN 或资源依赖可能导致超时。镜像站由第三方维护，使用前请核对可信度、同步时效和软件供应链安全。</p>
+        </div>
+      </section>
+
+      <section class="reasons-section" id="reasons">
+        <div class="section-heading light">
+          <div>
+            <p class="eyebrow">WHY IT HAPPENS</p>
+            <h2>限制不只有一种原因</h2>
+          </div>
+          <p>从政策合规到跨境链路质量，多种因素会共同影响访问结果。</p>
+        </div>
+        <div class="reason-list">
+          <article>
+            <span>01</span>
+            <h3>法律与内容合规</h3>
+            <p>境外平台可能未满足中国大陆关于内容管理、数据存储或运营资质的要求。</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>平台主动限制</h3>
+            <p>部分服务基于地区授权、商业策略或账户政策，不向特定区域提供功能。</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>跨境网络拥塞</h3>
+            <p>国际出口带宽、路由绕行与高峰拥堵会造成加载缓慢，即使网站并未受限。</p>
+          </article>
+          <article>
+            <span>04</span>
+            <h3>资源依赖失效</h3>
+            <p>页面本身可打开，但依赖的字体、脚本、图片或第三方接口可能无法加载。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="solutions-section" id="solutions">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">COMPLIANT OPTIONS</p>
+            <h2>按场景选择解决办法</h2>
+          </div>
+          <p>优先考虑合法、稳定且符合组织安全要求的方案。</p>
+        </div>
+        <div class="solution-layout">
+          <div class="scenario-tabs" role="tablist" aria-label="使用场景">
+            <button class="scenario-tab active" role="tab" aria-selected="true" data-scenario="daily">
+              <b>日常使用</b><span>信息、影音与社交</span>
+            </button>
+            <button class="scenario-tab" role="tab" aria-selected="false" data-scenario="work">
+              <b>企业办公</b><span>跨国协作与云服务</span>
+            </button>
+            <button class="scenario-tab" role="tab" aria-selected="false" data-scenario="research">
+              <b>学术研究</b><span>论文、数据与知识库</span>
+            </button>
+            <button class="scenario-tab" role="tab" aria-selected="false" data-scenario="travel">
+              <b>短期出行</b><span>国际漫游与临时访问</span>
+            </button>
+          </div>
+          <div class="solution-panel" id="solution-panel">
+            <p class="panel-label">推荐路径 / 01</p>
+            <h3>使用国内可用的同类服务</h3>
+            <p class="panel-copy">
+              对搜索、地图、影音和社交等日常需求，优先采用已在境内合规运营的平台，通常具有更好的速度和本地内容支持。
+            </p>
+            <ul>
+              <li><span>搜索与知识</span><b>必应、百度、知乎</b></li>
+              <li><span>视频与社区</span><b>哔哩哔哩、微博、小红书</b></li>
+              <li><span>地图与出行</span><b>高德地图、百度地图</b></li>
+            </ul>
+            <p class="legal-note">
+              <strong>合规提示</strong>
+              网络访问政策和技术状态会变化。涉及跨境联网、数据传输或企业业务时，请咨询所在组织的 IT 与法务人员，并遵守当地法律法规。
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div>
+        <span class="brand-mark">界</span>
+        <p><strong>边界之外</strong><br />让网络访问选择更清晰。</p>
+      </div>
+      <p>本页面仅提供一般性信息，不构成法律意见，也不提供规避网络监管的操作指导。</p>
+      <a href="#top">返回顶部 ↑</a>
+    </footer>
+
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>

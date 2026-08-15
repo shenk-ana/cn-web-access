@@ -1,0 +1,818 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-08-15",
+  "statusDefinitions": {
+    "blocked": "在中国大陆通常无法直接访问",
+    "partial": "通常可访问，但速度或功能可能不稳定",
+    "region": "受服务商官方地区政策限制"
+  },
+  "categories": {
+    "study": {
+      "code": "01",
+      "title": "学习与研究",
+      "description": "在线课程、学术论文、百科与写作工具。"
+    },
+    "ai": {
+      "code": "02",
+      "title": "大模型与 AI",
+      "description": "生成式 AI、智能搜索、模型与数据集平台。"
+    },
+    "code": {
+      "code": "03",
+      "title": "代码与社区",
+      "description": "代码托管、开发者问答、持续集成与静态部署。"
+    },
+    "cloud": {
+      "code": "04",
+      "title": "云平台",
+      "description": "云计算、应用部署、边缘网络与内容分发。"
+    },
+    "registry": {
+      "code": "05",
+      "title": "软件与镜像库",
+      "description": "依赖仓库、容器镜像、模型文件与系统软件源。"
+    },
+    "social": {
+      "code": "06",
+      "title": "社交与协作",
+      "description": "视频、社交网络、即时通讯与团队协作。"
+    }
+  },
+  "sites": [
+    {
+      "id": "google-scholar",
+      "category": "study",
+      "name": "Google Scholar",
+      "initials": "GS",
+      "intro": "Google 提供的学术文献搜索引擎，可检索论文、专利、学位论文与引用关系。",
+      "status": "blocked",
+      "accessSummary": "谷歌学术搜索通常无法直接访问，引用跳转也可能受到影响。",
+      "official": {
+        "name": "原网站",
+        "url": "https://scholar.google.com/"
+      },
+      "alternatives": [
+        {
+          "type": "alternative",
+          "name": "百度学术",
+          "url": "https://xueshu.baidu.com/"
+        },
+        {
+          "type": "alternative",
+          "name": "中国知网",
+          "url": "https://www.cnki.net/"
+        }
+      ]
+    },
+    {
+      "id": "coursera",
+      "category": "study",
+      "name": "Coursera",
+      "initials": "CO",
+      "intro": "与全球高校和机构合作的在线课程平台，提供课程、专项项目与职业证书。",
+      "status": "partial",
+      "accessSummary": "主页可能可用，但视频、字幕或第三方登录资源可能加载缓慢。",
+      "official": {
+        "name": "原网站",
+        "url": "https://www.coursera.org/"
+      },
+      "alternatives": [
+        {
+          "type": "alternative",
+          "name": "学堂在线",
+          "url": "https://www.xuetangx.com/"
+        },
+        {
+          "type": "alternative",
+          "name": "中国大学 MOOC",
+          "url": "https://www.icourse163.org/"
+        }
+      ]
+    },
+    {
+      "id": "khan-academy",
+      "category": "study",
+      "name": "Khan Academy",
+      "initials": "KA",
+      "intro": "非营利在线教育平台，覆盖数学、科学、编程与基础教育课程。",
+      "status": "partial",
+      "accessSummary": "视频与外部资源依赖较多，部分课程页面可能加载不完整。",
+      "official": {
+        "name": "原网站",
+        "url": "https://www.khanacademy.org/"
+      },
+      "alternatives": [
+        {
+          "type": "alternative",
+          "name": "国家智慧教育平台",
+          "url": "https://www.smartedu.cn/"
+        },
+        {
+          "type": "alternative",
+          "name": "网易公开课",
+          "url": "https://open.163.com/"
+        }
+      ]
+    },
+    {
+      "id": "wikipedia",
+      "category": "study",
+      "name": "Wikipedia",
+      "initials": "WI",
+      "intro": "由全球志愿者共同维护的多语言开放百科全书。",
+      "status": "blocked",
+      "accessSummary": "不同语言版本通常无法稳定直接访问。",
+      "official": {
+        "name": "原网站",
+        "url": "https://www.wikipedia.org/"
+      },
+      "alternatives": [
+        {
+          "type": "alternative",
+          "name": "百度百科",
+          "url": "https://baike.baidu.com/"
+        },
+        {
+          "type": "alternative",
+          "name": "中国大百科全书",
+          "url": "https://www.zgbk.com/"
+        }
+      ]
+    },
+    {
+      "id": "arxiv",
+      "category": "study",
+      "name": "arXiv",
+      "initials": "AR",
+      "intro": "面向物理、数学、计算机等领域的开放预印本论文平台。",
+      "status": "partial",
+      "accessSummary": "页面通常可访问，论文 PDF 下载可能受跨境链路影响。",
+      "official": {
+        "name": "原网站",
+        "url": "https://arxiv.org/"
+      },
+      "alternatives": [
+        {
+          "type": "alternative",
+          "name": "ChinaXiv",
+          "url": "https://chinaxiv.org/"
+        },
+        {
+          "type": "alternative",
+          "name": "国家科技图书文献中心",
+          "url": "https://www.nstl.gov.cn/"
+        }
+      ]
+    },
+    {
+      "id": "overleaf",
+      "category": "study",
+      "name": "Overleaf",
+      "initials": "OL",
+      "intro": "支持 LaTeX 在线编辑、模板管理与多人实时协作的学术写作平台。",
+      "status": "partial",
+      "accessSummary": "在线编辑与实时协作依赖长连接，高峰期可能出现延迟。",
+      "official": {
+        "name": "原网站",
+        "url": "https://www.overleaf.com/"
+      },
+      "alternatives": [
+        {
+          "type": "alternative",
+          "name": "TeXPage",
+          "url": "https://www.texpage.com/"
+        }
+      ]
+    },
+    {
+      "id": "chatgpt",
+      "category": "ai",
+      "name": "ChatGPT",
+      "initials": "CG",
+      "intro": "OpenAI 推出的通用对话式人工智能产品，支持文本、图像和文件处理。",
+      "status": "region",
+      "accessSummary": "服务未面向中国大陆地区提供，注册、登录与支付均可能受限。",
+      "official": {
+        "name": "原网站",
+        "url": "https://chatgpt.com/"
+      },
+      "alternatives": [
+        {
+          "type": "alternative",
+          "name": "豆包",
+          "url": "https://www.doubao.com/"
+        },
+        {
+          "type": "alternative",
+          "name": "Kimi",
+          "url": "https://www.kimi.com/"
+        }
+      ]
+    },
+    {
+      "id": "claude",
+      "category": "ai",
+      "name": "Claude",
+      "initials": "CL",
+      "intro": "Anthropic 推出的生成式 AI 助手，侧重长文本理解、分析与编程。",
+      "status": "region",
+      "accessSummary": "服务可用地区、账号与付款方式受到官方区域政策限制。",
+      "official": {
+        "name": "原网站",
+        "url": "https://claude.ai/"
+      },
+      "alternatives": [
+        {
+          "type": "alternative",
+          "name": "DeepSeek",
+          "url": "https://chat.deepseek.com/"
+        },
+        {
+          "type": "alternative",
+          "name": "通义千问",
+          "url": "https://www.qianwen.com/"
+        }
+      ]
+    },
+    {
+      "id": "google-gemini",
+      "category": "ai",
+      "name": "Google Gemini",
+      "initials": "GE",
+      "intro": "Google 推出的多模态 AI 助手，与其搜索和办公生态深度集成。",
+      "status": "region",
+      "accessSummary": "依赖 Google 账号与服务基础设施，中国大陆通常无法直接使用。",
+      "official": {
+        "name": "原网站",
+        "url": "https://gemini.google.com/"
+      },
+      "alternatives": [
+        {
+          "type": "alternative",
+          "name": "文心一言",
+          "url": "https://yiyan.baidu.com/"
+        },
+        {
+          "type": "alternative",
+          "name": "腾讯元宝",
+          "url": "https://yuanbao.tencent.com/"
+        }
+      ]
+    },
+    {
+      "id": "perplexity",
+      "category": "ai",
+      "name": "Perplexity",
+      "initials": "PX",
+      "intro": "以来源引用为特点的 AI 搜索与答案引擎。",
+      "status": "partial",
+      "accessSummary": "智能搜索及引用源可能因跨境连接而出现超时或内容缺失。",
+      "official": {
+        "name": "原网站",
+        "url": "https://www.perplexity.ai/"
+      },
+      "alternatives": [
+        {
+          "type": "alternative",
+          "name": "秘塔 AI 搜索",
+          "url": "https://metaso.cn/"
+        },
+        {
+          "type": "alternative",
+          "name": "天工 AI",
+          "url": "https://www.tiangong.cn/"
+        }
+      ]
+    },
+    {
+      "id": "hugging-face",
+      "category": "ai",
+      "name": "Hugging Face",
+      "initials": "HF",
+      "intro": "提供开源模型、数据集、演示应用与机器学习协作工具的平台。",
+      "status": "partial",
+      "accessSummary": "模型与数据集大文件下载容易中断，可优先使用国内模型平台或可信镜像。",
+      "official": {
+        "name": "原网站",
+        "url": "https://huggingface.co/"
+      },
+      "alternatives": [
+        {
+          "type": "alternative",
+          "name": "ModelScope",
+          "url": "https://www.modelscope.cn/"
+        },
+        {
+          "type": "mirror",
+          "name": "HF-Mirror",
+          "url": "https://hf-mirror.com/"
+        }
+      ]
+    },
+    {
+      "id": "github",
+      "category": "code",
+      "name": "GitHub",
+      "initials": "GH",
+      "intro": "全球主流的 Git 代码托管与开源协作平台。",
+      "status": "partial",
+      "accessSummary": "代码页面通常可用，但 Release、Raw、图片和 Git LFS 可能较慢。",
+      "official": {
+        "name": "原网站",
+        "url": "https://github.com/"
+      },
+      "alternatives": [
+        {
+          "type": "alternative",
+          "name": "Gitee",
+          "url": "https://gitee.com/"
+        },
+        {
+          "type": "alternative",
+          "name": "GitCode",
+          "url": "https://gitcode.com/"
+        }
+      ]
+    },
+    {
+      "id": "gitlab-com",
+      "category": "code",
+      "name": "GitLab.com",
+      "initials": "GL",
+      "intro": "集代码托管、CI/CD、项目管理和安全能力于一体的 DevSecOps 平台。",
+      "status": "partial",
+      "accessSummary": "公共 SaaS 跨境访问可能延迟，CI 依赖下载也会影响构建速度。",
+      "official": {
+        "name": "原网站",
+        "url": "https://gitlab.com/"
+      },
+      "alternatives": [
+        {
+          "type": "alternative",
+          "name": "极狐 GitLab",
+          "url": "https://gitlab.cn/"
+        },
+        {
+          "type": "alternative",
+          "name": "Gitee 企业版",
+          "url": "https://gitee.com/enterprises"
+        }
+      ]
+    },
+    {
+      "id": "bitbucket",
+      "category": "code",
+      "name": "Bitbucket",
+      "initials": "BB",
+      "intro": "Atlassian 旗下的 Git 代码托管服务，与 Jira 等团队工具集成。",
+      "status": "partial",
+      "accessSummary": "仓库克隆与 Atlassian 相关资源可能受国际链路影响。",
+      "official": {
+        "name": "原网站",
+        "url": "https://bitbucket.org/"
+      },
+      "alternatives": [
+        {
+          "type": "alternative",
+          "name": "腾讯云 CODING",
+          "url": "https://coding.net/"
+        }
+      ]
+    },
+    {
+      "id": "stack-overflow",
+      "category": "code",
+      "name": "Stack Overflow",
+      "initials": "SO",
+      "intro": "面向程序员的技术问答社区，积累了大量开发问题与解决方案。",
+      "status": "partial",
+      "accessSummary": "页面主体可能可用，图片、脚本和登录功能偶有加载失败。",
+      "official": {
+        "name": "原网站",
+        "url": "https://stackoverflow.com/"
+      },
+      "alternatives": [
+        {
+          "type": "alternative",
+          "name": "SegmentFault",
+          "url": "https://segmentfault.com/"
+        },
+        {
+          "type": "alternative",
+          "name": "稀土掘金",
+          "url": "https://juejin.cn/"
+        }
+      ]
+    },
+    {
+      "id": "github-pages",
+      "category": "code",
+      "name": "GitHub Pages",
+      "initials": "GP",
+      "intro": "从 GitHub 仓库直接发布静态网站的托管服务。",
+      "status": "partial",
+      "accessSummary": "自定义域名与静态资源的可达性取决于 DNS、CDN 和依赖来源。",
+      "official": {
+        "name": "原网站",
+        "url": "https://pages.github.com/"
+      },
+      "alternatives": [
+        {
+          "type": "alternative",
+          "name": "EdgeOne Pages",
+          "url": "https://pages.edgeone.ai/"
+        },
+        {
+          "type": "alternative",
+          "name": "阿里云静态网站托管",
+          "url": "https://www.aliyun.com/product/oss"
+        }
+      ]
+    },
+    {
+      "id": "aws",
+      "category": "cloud",
+      "name": "AWS 全球区",
+      "initials": "AW",
+      "intro": "Amazon 提供的全球云计算平台，覆盖计算、存储、数据库与 AI 服务。",
+      "status": "partial",
+      "accessSummary": "全球区控制台与 API 可受跨境链路影响，中国区域由独立主体运营。",
+      "official": {
+        "name": "全球官网",
+        "url": "https://aws.amazon.com/"
+      },
+      "alternatives": [
+        {
+          "type": "alternative",
+          "name": "AWS 中国",
+          "url": "https://www.amazonaws.cn/"
+        }
+      ]
+    },
+    {
+      "id": "google-cloud",
+      "category": "cloud",
+      "name": "Google Cloud",
+      "initials": "GC",
+      "intro": "Google 的全球云平台，提供计算、数据分析、AI 与基础设施服务。",
+      "status": "blocked",
+      "accessSummary": "控制台、身份认证及多项 Google 基础服务通常无法直接使用。",
+      "official": {
+        "name": "原网站",
+        "url": "https://cloud.google.com/"
+      },
+      "alternatives": [
+        {
+          "type": "alternative",
+          "name": "阿里云",
+          "url": "https://www.aliyun.com/"
+        },
+        {
+          "type": "alternative",
+          "name": "腾讯云",
+          "url": "https://cloud.tencent.com/"
+        }
+      ]
+    },
+    {
+      "id": "microsoft-azure",
+      "category": "cloud",
+      "name": "Microsoft Azure 全球区",
+      "initials": "AZ",
+      "intro": "Microsoft 的全球公有云平台，与企业软件和开发工具生态结合紧密。",
+      "status": "partial",
+      "accessSummary": "全球区和中国区账号、订阅及数据平面相互独立。",
+      "official": {
+        "name": "全球官网",
+        "url": "https://azure.microsoft.com/"
+      },
+      "alternatives": [
+        {
+          "type": "alternative",
+          "name": "Azure 中国",
+          "url": "https://www.azure.cn/"
+        }
+      ]
+    },
+    {
+      "id": "vercel",
+      "category": "cloud",
+      "name": "Vercel",
+      "initials": "VE",
+      "intro": "面向现代前端应用的部署平台，支持预览、Serverless 与边缘运行时。",
+      "status": "partial",
+      "accessSummary": "站点本身及其 Serverless、字体、分析脚本在境内可能不稳定。",
+      "official": {
+        "name": "原网站",
+        "url": "https://vercel.com/"
+      },
+      "alternatives": [
+        {
+          "type": "alternative",
+          "name": "EdgeOne Pages",
+          "url": "https://pages.edgeone.ai/"
+        },
+        {
+          "type": "alternative",
+          "name": "阿里云 ESA",
+          "url": "https://www.aliyun.com/product/esa"
+        }
+      ]
+    },
+    {
+      "id": "cloudflare",
+      "category": "cloud",
+      "name": "Cloudflare",
+      "initials": "CF",
+      "intro": "提供 CDN、DNS、安全防护与边缘计算服务的全球网络平台。",
+      "status": "partial",
+      "accessSummary": "不同产品和线路在境内表现差异较大，免费网络未必提供稳定加速。",
+      "official": {
+        "name": "原网站",
+        "url": "https://www.cloudflare.com/"
+      },
+      "alternatives": [
+        {
+          "type": "alternative",
+          "name": "阿里云 CDN",
+          "url": "https://www.aliyun.com/product/cdn"
+        },
+        {
+          "type": "alternative",
+          "name": "腾讯云 CDN",
+          "url": "https://cloud.tencent.com/product/cdn"
+        }
+      ]
+    },
+    {
+      "id": "maven-central",
+      "category": "registry",
+      "name": "Maven Central",
+      "initials": "MV",
+      "intro": "Java 与 JVM 生态最常用的公共依赖中央仓库。",
+      "status": "partial",
+      "accessSummary": "Java 依赖量大且请求频繁，直接连接中央仓库容易超时。",
+      "official": {
+        "name": "中央仓库",
+        "url": "https://central.sonatype.com/"
+      },
+      "alternatives": [
+        {
+          "type": "mirror",
+          "name": "阿里云 Maven",
+          "url": "https://maven.aliyun.com/repository/public"
+        },
+        {
+          "type": "mirror",
+          "name": "镜像配置说明",
+          "url": "https://developer.aliyun.com/mirror/maven/"
+        }
+      ]
+    },
+    {
+      "id": "npm-registry",
+      "category": "registry",
+      "name": "npm Registry",
+      "initials": "NP",
+      "intro": "JavaScript 与 Node.js 生态的官方公共软件包仓库。",
+      "status": "partial",
+      "accessSummary": "大量小文件与依赖树会放大跨境延迟，安装过程可能卡住。",
+      "official": {
+        "name": "npm",
+        "url": "https://www.npmjs.com/"
+      },
+      "alternatives": [
+        {
+          "type": "mirror",
+          "name": "npmmirror",
+          "url": "https://npmmirror.com/"
+        }
+      ]
+    },
+    {
+      "id": "pypi",
+      "category": "registry",
+      "name": "PyPI",
+      "initials": "PY",
+      "intro": "Python 生态的官方第三方软件包索引与分发平台。",
+      "status": "partial",
+      "accessSummary": "Python 包与大型 wheel 文件下载速度可能不稳定。",
+      "official": {
+        "name": "PyPI",
+        "url": "https://pypi.org/"
+      },
+      "alternatives": [
+        {
+          "type": "mirror",
+          "name": "清华 TUNA",
+          "url": "https://mirrors.tuna.tsinghua.edu.cn/help/pypi/"
+        },
+        {
+          "type": "mirror",
+          "name": "阿里云 PyPI",
+          "url": "https://developer.aliyun.com/mirror/pypi"
+        }
+      ]
+    },
+    {
+      "id": "docker-hub",
+      "category": "registry",
+      "name": "Docker Hub",
+      "initials": "DH",
+      "intro": "Docker 官方容器镜像仓库和公共镜像分发平台。",
+      "status": "partial",
+      "accessSummary": "镜像层较大且服务策略经常变化，公共加速地址可能随时失效。",
+      "official": {
+        "name": "Docker Hub",
+        "url": "https://hub.docker.com/"
+      },
+      "alternatives": [
+        {
+          "type": "mirror",
+          "name": "阿里云容器镜像服务",
+          "url": "https://www.aliyun.com/product/acr"
+        },
+        {
+          "type": "mirror",
+          "name": "腾讯云容器镜像",
+          "url": "https://cloud.tencent.com/product/tcr"
+        }
+      ]
+    },
+    {
+      "id": "hugging-face-hub",
+      "category": "registry",
+      "name": "Hugging Face Hub",
+      "initials": "HF",
+      "intro": "集中托管机器学习模型、数据集与应用文件的开放平台。",
+      "status": "partial",
+      "accessSummary": "模型权重和数据集体积大，建议使用国内平台或可信下载镜像。",
+      "official": {
+        "name": "Hugging Face",
+        "url": "https://huggingface.co/"
+      },
+      "alternatives": [
+        {
+          "type": "mirror",
+          "name": "HF-Mirror",
+          "url": "https://hf-mirror.com/"
+        },
+        {
+          "type": "alternative",
+          "name": "ModelScope",
+          "url": "https://www.modelscope.cn/"
+        }
+      ]
+    },
+    {
+      "id": "ubuntu",
+      "category": "registry",
+      "name": "Ubuntu 软件源",
+      "initials": "UB",
+      "intro": "Ubuntu 官方系统软件包与安全更新的分发源。",
+      "status": "partial",
+      "accessSummary": "系统更新会下载大量软件包，跨境官方源可能耗时较长。",
+      "official": {
+        "name": "Ubuntu Archive",
+        "url": "https://archive.ubuntu.com/"
+      },
+      "alternatives": [
+        {
+          "type": "mirror",
+          "name": "清华 TUNA",
+          "url": "https://mirrors.tuna.tsinghua.edu.cn/help/ubuntu/"
+        },
+        {
+          "type": "mirror",
+          "name": "阿里云 Ubuntu",
+          "url": "https://developer.aliyun.com/mirror/ubuntu"
+        }
+      ]
+    },
+    {
+      "id": "youtube",
+      "category": "social",
+      "name": "YouTube",
+      "initials": "YT",
+      "intro": "Google 旗下的全球视频分享、直播与内容创作平台。",
+      "status": "blocked",
+      "accessSummary": "网页、视频流和嵌入播放器通常无法直接加载。",
+      "official": {
+        "name": "原网站",
+        "url": "https://www.youtube.com/"
+      },
+      "alternatives": [
+        {
+          "type": "alternative",
+          "name": "哔哩哔哩",
+          "url": "https://www.bilibili.com/"
+        },
+        {
+          "type": "alternative",
+          "name": "西瓜视频",
+          "url": "https://www.ixigua.com/"
+        }
+      ]
+    },
+    {
+      "id": "x",
+      "category": "social",
+      "name": "X",
+      "initials": "X",
+      "intro": "面向公共话题、新闻和实时动态的全球社交网络。",
+      "status": "blocked",
+      "accessSummary": "网站、客户端及嵌入帖文通常无法直接访问。",
+      "official": {
+        "name": "原网站",
+        "url": "https://x.com/"
+      },
+      "alternatives": [
+        {
+          "type": "alternative",
+          "name": "微博",
+          "url": "https://weibo.com/"
+        },
+        {
+          "type": "alternative",
+          "name": "即刻",
+          "url": "https://web.okjike.com/"
+        }
+      ]
+    },
+    {
+      "id": "facebook-instagram",
+      "category": "social",
+      "name": "Facebook / Instagram",
+      "initials": "ME",
+      "intro": "Meta 旗下的社交网络与图片、短视频分享平台。",
+      "status": "blocked",
+      "accessSummary": "Meta 旗下社交服务通常无法直接访问。",
+      "official": {
+        "name": "Meta",
+        "url": "https://www.facebook.com/"
+      },
+      "alternatives": [
+        {
+          "type": "alternative",
+          "name": "小红书",
+          "url": "https://www.xiaohongshu.com/"
+        },
+        {
+          "type": "alternative",
+          "name": "微信",
+          "url": "https://weixin.qq.com/"
+        }
+      ]
+    },
+    {
+      "id": "discord",
+      "category": "social",
+      "name": "Discord",
+      "initials": "DC",
+      "intro": "以服务器和频道为核心的社区语音、文字与视频沟通平台。",
+      "status": "blocked",
+      "accessSummary": "网页、语音和社区服务器连接通常不稳定或不可用。",
+      "official": {
+        "name": "原网站",
+        "url": "https://discord.com/"
+      },
+      "alternatives": [
+        {
+          "type": "alternative",
+          "name": "KOOK",
+          "url": "https://www.kookapp.cn/"
+        },
+        {
+          "type": "alternative",
+          "name": "QQ",
+          "url": "https://im.qq.com/"
+        }
+      ]
+    },
+    {
+      "id": "slack",
+      "category": "social",
+      "name": "Slack",
+      "initials": "SL",
+      "intro": "面向组织和团队的频道式协作、消息与应用集成平台。",
+      "status": "partial",
+      "accessSummary": "工作区、文件与通知连接可能受到跨境网络延迟影响。",
+      "official": {
+        "name": "原网站",
+        "url": "https://slack.com/"
+      },
+      "alternatives": [
+        {
+          "type": "alternative",
+          "name": "飞书",
+          "url": "https://www.feishu.cn/"
+        },
+        {
+          "type": "alternative",
+          "name": "钉钉",
+          "url": "https://www.dingtalk.com/"
+        }
+      ]
+    }
+  ]
+}
