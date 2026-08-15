@@ -1074,7 +1074,9 @@ h1 span {
 
 .detail-section-heading h2 {
   margin: 0;
-  font-size: 30px;
+  font-size: clamp(28px, 3vw, 34px);
+  letter-spacing: -0.04em;
+  line-height: 1.15;
 }
 
 .condition-card {
@@ -1113,64 +1115,58 @@ h1 span {
 }
 
 .detail-link-section {
-  margin-bottom: 28px;
+  margin-bottom: 36px;
 }
 
 .link-section-title {
-  display: grid;
-  grid-template-columns: 34px 1fr;
-  align-items: center;
-  gap: 12px;
-  margin-bottom: 12px;
-}
-
-.link-section-title > span {
-  color: var(--blue);
-  font-family: var(--mono);
-  font-size: 9px;
-}
-
-.link-section-title > div {
   display: flex;
   align-items: baseline;
-  gap: 12px;
+  gap: 14px;
+  margin: 0 0 16px;
+  padding: 0 0 10px;
+  border-bottom: 1px solid #e4ebf5;
 }
 
-.link-section-title strong {
-  font-size: 13px;
+.link-section-title h3 {
+  margin: 0;
+  color: var(--ink);
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
 }
 
-.link-section-title small {
+.link-section-title p {
+  margin: 0;
   color: #8490a2;
-  font-size: 10px;
+  font-size: 12px;
 }
 
 .detail-link-card {
   position: relative;
   display: flex;
   flex-direction: column;
-  min-height: 144px;
-  padding: 20px;
+  min-height: 128px;
+  padding: 18px;
+  color: var(--ink);
   background: var(--white);
   border: 1px solid var(--line);
-  transition: color 160ms ease, background 160ms ease, transform 160ms ease;
+  transition: color 160ms ease, background 160ms ease, border-color 160ms ease, transform 160ms ease;
 }
 
 .detail-link-card.alternative {
-  color: var(--blue);
-  background: #eff4ff;
-  border-color: #c9d8fb;
+  background: #f7f9fd;
+  border-color: #d7e1f4;
 }
 
 .detail-link-card.mirror {
-  color: #087b73;
-  background: #edfafa;
-  border-color: #abdeda;
+  background: #f5fbfb;
+  border-color: #cfe3e1;
 }
 
 .detail-link-card:hover {
   color: var(--white);
   background: var(--blue);
+  border-color: var(--blue);
   transform: translateY(-2px);
 }
 
@@ -1191,10 +1187,10 @@ h1 span {
 
 .detail-link-type {
   margin-bottom: auto;
-  color: #8a96a8;
+  color: #94a0b2;
   font-family: var(--mono);
   font-size: 8px;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.12em;
 }
 
 .detail-link-card:hover .detail-link-type,
@@ -1203,10 +1199,20 @@ h1 span {
 }
 
 .detail-link-card strong {
-  font-size: 15px;
+  margin-top: 10px;
+  color: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.detail-link-card.alternative strong,
+.detail-link-card.mirror strong {
+  color: inherit;
 }
 
 .detail-link-card small {
+  margin-top: 6px;
   color: #7b8799;
   font-family: var(--mono);
   font-size: 9px;

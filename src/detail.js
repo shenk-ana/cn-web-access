@@ -73,14 +73,19 @@ const categoryGuidance = {
 function linkCard(link, type) {
   const host = new URL(link.url).hostname;
   const typeLabels = {
-    original: "ORIGINAL / 原网站",
-    alternative: "ALTERNATIVE / 替代网站",
-    mirror: "MIRROR / 镜像网站",
+    original: "OFFICIAL",
+    alternative: "ALT",
+    mirror: "MIRROR",
   };
+  const title =
+    type === "original" && /^(原网站|全球官网|中央仓库|官网)$/u.test(link.name)
+      ? host
+      : link.name;
+
   return `
     <a class="detail-link-card ${type}" href="${link.url}" target="_blank" rel="noopener noreferrer">
       <span class="detail-link-type">${typeLabels[type]}</span>
-      <strong>${link.name}</strong>
+      <strong>${title}</strong>
       <small>${host}</small>
       <span class="detail-link-arrow" aria-hidden="true">↗</span>
     </a>
@@ -163,8 +168,8 @@ function renderDetail() {
         </div>
         <div class="detail-link-section">
           <div class="link-section-title">
-            <span>01</span>
-            <div><strong>原网站</strong><small>服务官方入口</small></div>
+            <h3>原网站</h3>
+            <p>服务官方入口</p>
           </div>
           <div class="detail-links">
             ${linkCard(site.official, "original")}
@@ -172,8 +177,8 @@ function renderDetail() {
         </div>
         <div class="detail-link-section">
           <div class="link-section-title">
-            <span>02</span>
-            <div><strong>替代网站</strong><small>功能相近的境内可用服务</small></div>
+            <h3>替代网站</h3>
+            <p>功能相近的境内可用服务</p>
           </div>
           <div class="detail-links">
             ${
@@ -187,8 +192,8 @@ function renderDetail() {
         </div>
         <div class="detail-link-section mirror-section">
           <div class="link-section-title">
-            <span>03</span>
-            <div><strong>镜像网站</strong><small>用于资源同步或下载加速</small></div>
+            <h3>镜像网站</h3>
+            <p>用于资源同步或下载加速</p>
           </div>
           <div class="detail-links">
             ${
