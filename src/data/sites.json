@@ -910,6 +910,11 @@
       "alternatives": [
         {
           "type": "alternative",
+          "name": "DeepSeek Harness (dsh)",
+          "url": "https://deepseek.com/harness"
+        },
+        {
+          "type": "alternative",
           "name": "Trae",
           "url": "https://www.trae.cn/"
         },
@@ -933,6 +938,11 @@
         "url": "https://github.com/features/copilot"
       },
       "alternatives": [
+        {
+          "type": "alternative",
+          "name": "DeepSeek Harness (dsh)",
+          "url": "https://deepseek.com/harness"
+        },
         {
           "type": "alternative",
           "name": "百度 Comate",
@@ -960,6 +970,11 @@
       "alternatives": [
         {
           "type": "alternative",
+          "name": "DeepSeek Harness (dsh)",
+          "url": "https://deepseek.com/harness"
+        },
+        {
+          "type": "alternative",
           "name": "通义灵码",
           "url": "https://lingma.aliyun.com/"
         },
@@ -983,6 +998,11 @@
         "url": "https://windsurf.com/"
       },
       "alternatives": [
+        {
+          "type": "alternative",
+          "name": "DeepSeek Harness (dsh)",
+          "url": "https://deepseek.com/harness"
+        },
         {
           "type": "alternative",
           "name": "Trae",
@@ -1010,6 +1030,11 @@
       "alternatives": [
         {
           "type": "alternative",
+          "name": "DeepSeek Harness (dsh)",
+          "url": "https://deepseek.com/harness"
+        },
+        {
+          "type": "alternative",
           "name": "通义灵码",
           "url": "https://lingma.aliyun.com/"
         },
@@ -1033,6 +1058,11 @@
         "url": "https://devin.ai/"
       },
       "alternatives": [
+        {
+          "type": "alternative",
+          "name": "DeepSeek Harness (dsh)",
+          "url": "https://deepseek.com/harness"
+        },
         {
           "type": "alternative",
           "name": "腾讯 CodeBuddy",
@@ -1092,6 +1122,36 @@
           "type": "alternative",
           "name": "阿里云 CloudIDE",
           "url": "https://www.aliyun.com/product/cloudide"
+        }
+      ]
+    },
+    {
+      "id": "deepseek-harness",
+      "category": "agent",
+      "name": "DeepSeek Harness",
+      "initials": "DH",
+      "intro": "DeepSeek 开源的 AI 编程与办公智能体框架，命令行工具简称 dsh，采用一切皆插件的架构。",
+      "status": "partial",
+      "accessSummary": "官网与 npm 包通常可访问；从 GitHub 克隆源码时，下载速度可能受跨境链路影响。",
+      "official": {
+        "name": "原网站",
+        "url": "https://deepseek.com/harness"
+      },
+      "alternatives": [
+        {
+          "type": "alternative",
+          "name": "GitHub 仓库",
+          "url": "https://github.com/deepseek-ai/deepseek-harness"
+        },
+        {
+          "type": "alternative",
+          "name": "通义灵码",
+          "url": "https://lingma.aliyun.com/"
+        },
+        {
+          "type": "alternative",
+          "name": "Trae",
+          "url": "https://www.trae.cn/"
         }
       ]
     }
